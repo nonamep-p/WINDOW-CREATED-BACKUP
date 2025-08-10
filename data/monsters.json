@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "monsters": {
+    "slime_basic": {
+      "name": "Green Slime",
+      "level": 3,
+      "tags": ["beast"],
+      "stats": {"hp": 120, "sp": 0, "atk": 18, "defense": 10, "speed": 8, "intelligence": 4, "luck": 2, "agility": 6, "accuracy": 60, "evasion": 30, "pen": 0, "crit_base": 0.05, "crit_dmg": 1.5},
+      "resistances": {"poison": 0.5, "fire": 0.1},
+      "rewards": {"xp": [12, 18], "gold": [6, 9], "drops": [{"itemId": "slime_core", "chance": 0.3, "min": 1, "max": 2}]},
+      "ai": {"weights": {"attack": 0.8, "defend": 0.2}}
+    },
+    "wolf": {
+      "name": "Forest Wolf",
+      "level": 4,
+      "tags": ["beast"],
+      "stats": {"hp": 140, "sp": 0, "atk": 22, "defense": 9, "speed": 12, "intelligence": 5, "luck": 4, "agility": 12, "accuracy": 65, "evasion": 40, "pen": 2, "crit_base": 0.06, "crit_dmg": 1.5},
+      "resistances": {"ice": 0.1},
+      "rewards": {"xp": [16, 22], "gold": [8, 12], "drops": [{"itemId": "wolf_pelt", "chance": 0.35}]},
+      "ai": {"weights": {"attack": 0.85, "defend": 0.15}}
+    },
+    "sprite": {
+      "name": "Forest Sprite",
+      "level": 5,
+      "tags": ["spirit"],
+      "stats": {"hp": 100, "sp": 40, "atk": 12, "defense": 8, "speed": 13, "intelligence": 12, "luck": 8, "agility": 12, "accuracy": 70, "evasion": 45, "pen": 0, "crit_base": 0.07, "crit_dmg": 1.5},
+      "resistances": {"magic": 0.1, "fire": -0.1},
+      "rewards": {"xp": [18, 26], "gold": [10, 14], "drops": [{"itemId": "mystic_dust", "chance": 0.3}]},
+      "ai": {"weights": {"skill:fire_bolt": 0.6, "attack": 0.4}}
+    },
+    "skeleton": {
+      "name": "Skeleton",
+      "level": 6,
+      "tags": ["undead"],
+      "stats": {"hp": 160, "sp": 0, "atk": 24, "defense": 14, "speed": 9, "intelligence": 6, "luck": 5, "agility": 9, "accuracy": 65, "evasion": 30, "pen": 3, "crit_base": 0.05, "crit_dmg": 1.5},
+      "resistances": {"poison": 0.8, "holy": -0.2},
+      "rewards": {"xp": [24, 32], "gold": [12, 18], "drops": [{"itemId": "bone_fragment", "chance": 0.5}]},
+      "ai": {"weights": {"attack": 1.0}}
+    },
+    "ghost": {
+      "name": "Restless Ghost",
+      "level": 7,
+      "tags": ["spirit"],
+      "stats": {"hp": 130, "sp": 30, "atk": 16, "defense": 8, "speed": 12, "intelligence": 14, "luck": 6, "agility": 11, "accuracy": 70, "evasion": 45, "pen": 0, "crit_base": 0.06, "crit_dmg": 1.5},
+      "resistances": {"physical": 0.2, "holy": -0.2, "shadow": 0.2},
+      "rewards": {"xp": [26, 36], "gold": [14, 20], "drops": [{"itemId": "ectoplasm", "chance": 0.35}]},
+      "ai": {"weights": {"skill:smite": 0.2, "attack": 0.8}}
+    },
+    "treant_elder": {
+      "name": "Elder Treant",
+      "level": 10,
+      "tags": ["boss", "beast"],
+      "stats": {"hp": 600, "sp": 0, "atk": 40, "defense": 22, "speed": 9, "intelligence": 10, "luck": 8, "agility": 8, "accuracy": 75, "evasion": 25, "pen": 4, "crit_base": 0.05, "crit_dmg": 1.5},
+      "resistances": {"poison": 0.5, "fire": -0.2},
+      "rewards": {"xp": [120, 160], "gold": [80, 120], "drops": [{"itemId": "sunsteel_blade", "chance": 0.1}, {"itemId": "mystic_dust", "chance": 0.6}]},
+      "ai": {"weights": {"attack": 0.7, "skill:guard_break": 0.3}, "phase": [{"hpPct": 0.5, "enrage": {"atk%": 0.2}}]}
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "factions": {
+    "knight_order": {
+      "name": "Knight Order",
+      "bonuses": {
+        "defense%": 0.08,
+        "block%": 0.05
+      },
+      "switchPenaltyDays": 7,
+      "bonus": {
+        "defense%": 0.08,
+        "block%": 0.05
+      },
+      "members": [],
+      "owner_id": null,
+      "officers": [],
+      "invites": {},
+      "member_cap": 50,
+      "level": 1,
+      "xp": 10,
+      "gold": 100
+    },
+    "arcanum": {
+      "name": "Arcanum",
+      "bonuses": {
+        "intelligence%": 0.08,
+        "sp%": 0.1
+      },
+      "bonus": {
+        "intelligence%": 0.08,
+        "sp%": 0.1
+      },
+      "members": [],
+      "owner_id": null,
+      "officers": [],
+      "invites": {},
+      "member_cap": 50,
+      "level": 1,
+      "xp": 0,
+      "gold": 0
+    },
+    "shadow_syndicate": {
+      "name": "Shadow Syndicate",
+      "bonuses": {
+        "crit_base": 0.05,
+        "evasion": 15
+      },
+      "bonus": {
+        "crit_base": 0.05,
+        "evasion": 15
+      },
+      "members": [],
+      "owner_id": null,
+      "officers": [],
+      "invites": {},
+      "member_cap": 50,
+      "level": 1,
+      "xp": 0,
+      "gold": 0
+    },
+    "wardens": {
+      "name": "Wardens of the Wild",
+      "bonuses": {
+        "agility": 5,
+        "accuracy": 10,
+        "res_poison%": 0.2
+      },
+      "bonus": {
+        "agility": 5,
+        "accuracy": 10,
+        "res_poison%": 0.2
+      },
+      "members": [
+        1297013439125917766
+      ],
+      "owner_id": 1297013439125917766,
+      "officers": [],
+      "invites": {},
+      "member_cap": 50,
+      "level": 1,
+      "xp": 50,
+      "gold": 500
+    }
+  }
+}

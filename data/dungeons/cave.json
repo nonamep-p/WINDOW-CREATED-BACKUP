@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "cave",
+  "name": "Cave",
+  "difficulty": 1.2,
+  "bossFloors": [5, 10],
+  "themes": ["shadow", "earth"],
+  "floors": {
+    "1": {"env": {"name": "Mouth of the Cave", "hint": "Bats swoop"}, "affixes": [{"id": "echo", "desc": "Misses 5% more likely"}], "encounters": {"weights": {"bat": 5, "skeleton": 3}}, "lootBias": {"ore": 0.5, "bat_wing": 0.5}, "rewardsMult": {"xp": 1.1, "gold": 1.1}},
+    "2": {"env": {"name": "Dripstone Hall", "hint": "Slippery floors"}, "affixes": [{"id": "slick", "desc": "-5% evasion (players)"}], "encounters": {"weights": {"bat": 4, "skeleton": 4}}, "lootBias": {"ore": 0.6, "bone": 0.4}, "rewardsMult": {"xp": 1.18, "gold": 1.15}},
+    "3": {"env": {"name": "Crystal Vein", "hint": "Magic resonates"}, "affixes": [{"id": "resonance", "desc": "+10% magic damage"}], "encounters": {"weights": {"ghost": 3, "skeleton": 5}}, "lootBias": {"crystal": 0.6, "ore": 0.4}, "rewardsMult": {"xp": 1.26, "gold": 1.2}},
+    "4": {"env": {"name": "Narrow Chasm", "hint": "Ranged hindered"}, "affixes": [{"id": "tight_quarters", "desc": "-10% accuracy (ranged)"}], "encounters": {"weights": {"bat": 4, "wolf": 2, "skeleton": 2}}, "lootBias": {"rope": 0.4, "ore": 0.6}, "rewardsMult": {"xp": 1.34, "gold": 1.25}},
+    "5": {"env": {"name": "Pit Lord's Ledge", "hint": "Boss: Demon Hound"}, "affixes": [{"id": "sulfur_fumes", "desc": "-10% SP regen"}], "encounters": {"boss": "demon_hound"}, "lootBias": {"sulfur": 0.5, "ore": 0.5}, "rewardsMult": {"xp": 1.5, "gold": 1.4}},
+    "6": {"env": {"name": "Collapsed Tunnel", "hint": "Stuns more reliable"}, "affixes": [{"id": "unstable", "desc": "+10% stun chance"}], "encounters": {"weights": {"skeleton": 4, "ghost": 4}}, "lootBias": {"ore": 0.5, "crystal": 0.5}, "rewardsMult": {"xp": 1.58, "gold": 1.45}},
+    "7": {"env": {"name": "Underground River", "hint": "Lightning excels"}, "affixes": [{"id": "wet", "desc": "+10% lightning dmg"}], "encounters": {"weights": {"bat": 4, "ghost": 4}}, "lootBias": {"fish": 0.5, "crystal": 0.5}, "rewardsMult": {"xp": 1.66, "gold": 1.5}},
+    "8": {"env": {"name": "Fungal Grove", "hint": "Poison hazards"}, "affixes": [{"id": "spore_clouds", "desc": "Start fight: 25% Poison (1)"}], "encounters": {"weights": {"slime_basic": 3, "skeleton": 5}}, "lootBias": {"mushroom": 0.6, "spores": 0.4}, "rewardsMult": {"xp": 1.74, "gold": 1.55}},
+    "9": {"env": {"name": "Black Quartz Chamber", "hint": "Crits sting"}, "affixes": [{"id": "keen_edges", "desc": "+5% crit chance"}], "encounters": {"weights": {"ghost": 3, "wraith": 5}}, "lootBias": {"quartz": 0.6, "crystal": 0.4}, "rewardsMult": {"xp": 1.82, "gold": 1.6}},
+    "10": {"env": {"name": "Abyssal Fissure", "hint": "Boss: Abyss Watcher"}, "affixes": [{"id": "void_whispers", "desc": "+10% shadow dmg"}], "encounters": {"boss": "abyss_watcher"}, "lootBias": {"abyss_essence": 0.7, "crystal": 0.3}, "rewardsMult": {"xp": 2.0, "gold": 1.8}}
+  }
+}

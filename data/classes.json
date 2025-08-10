@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "classes": {
+    "warrior": {
+      "name": "Warrior",
+      "base": {"hp": 120, "sp": 30, "atk": 14, "defense": 12, "speed": 8, "intelligence": 6, "luck": 6, "agility": 8},
+      "perLevel": {"hp": 10, "sp": 2, "atk": 3, "defense": 2, "speed": 1},
+      "crit_base": 0.05,
+      "tags": ["melee", "guard"],
+      "passives": [{"id": "guard_mastery", "desc": "Defend reduces +10% damage."}]
+    },
+    "rogue": {
+      "name": "Rogue",
+      "base": {"hp": 90, "sp": 40, "atk": 12, "defense": 8, "speed": 12, "intelligence": 8, "luck": 12, "agility": 14},
+      "perLevel": {"hp": 7, "sp": 3, "atk": 3, "defense": 1, "speed": 2, "agility": 2},
+      "crit_base": 0.08,
+      "tags": ["melee", "crit"],
+      "passives": [{"id": "first_strike", "desc": "First attack each battle cannot graze."}]
+    },
+    "mage": {
+      "name": "Mage",
+      "base": {"hp": 80, "sp": 60, "atk": 6, "defense": 6, "speed": 9, "intelligence": 16, "luck": 8, "agility": 9},
+      "perLevel": {"hp": 6, "sp": 5, "intelligence": 4, "speed": 1},
+      "crit_base": 0.05,
+      "tags": ["caster"],
+      "passives": [{"id": "arcane_focus", "desc": "+10% magic damage."}]
+    },
+    "cleric": {
+      "name": "Cleric",
+      "base": {"hp": 100, "sp": 55, "atk": 8, "defense": 10, "speed": 8, "intelligence": 14, "luck": 10, "agility": 8},
+      "perLevel": {"hp": 8, "sp": 4, "intelligence": 3, "defense": 2},
+      "crit_base": 0.05,
+      "tags": ["support", "holy"],
+      "passives": [{"id": "benediction", "desc": "Start battle with Regen (2 turns)."}]
+    },
+    "ranger": {
+      "name": "Ranger",
+      "base": {"hp": 95, "sp": 40, "atk": 13, "defense": 9, "speed": 13, "intelligence": 9, "luck": 11, "agility": 13},
+      "perLevel": {"hp": 7, "sp": 3, "atk": 3, "speed": 2, "agility": 2},
+      "crit_base": 0.07,
+      "tags": ["ranged"],
+      "passives": [{"id": "hunter_instinct", "desc": "+5% accuracy and +5 penetration."}]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "shops": {
+    "armory": {
+      "name": "Armory",
+      "markup": 1.1,
+      "sellbackRate": 0.5,
+      "refreshHours": 24,
+      "rotation": [
+        {"items": ["iron_sword", "buckler", "chain_mail", "oak_bow"], "weight": 1},
+        {"items": ["tower_shield", "sunsteel_blade", "leather_mail"], "weight": 0.3}
+      ]
+    },
+    "apothecary": {
+      "name": "Apothecary",
+      "markup": 1.0,
+      "sellbackRate": 0.4,
+      "refreshHours": 12,
+      "rotation": [
+        {"items": ["vital_potion_s", "vital_potion_m", "antidote", "shock_bomb"], "weight": 1}
+      ],
+      "dailyDeal": {"discount": 0.1, "count": 1}
+    }
+  }
+}

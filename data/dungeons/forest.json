@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "forest",
+  "name": "Forest",
+  "difficulty": 1.0,
+  "bossFloors": [5, 10],
+  "themes": ["nature", "poison"],
+  "floors": {
+    "1": {"env": {"name": "Mossy Trail", "hint": "Poison light, fire effective"}, "affixes": [{"id": "gentle_breeze", "desc": "+5% evasion (all)"}], "encounters": {"weights": {"slime_basic": 5, "wolf": 3, "sprite": 2}}, "lootBias": {"herbs": 0.6, "materials": 0.4}, "rewardsMult": {"xp": 1.0, "gold": 1.0}, "events": [{"id": "hidden_cache", "chance": 0.15, "effect": "gain_gold:15-30"}]},
+    "2": {"env": {"name": "Whispering Thicket", "hint": "Sprites appear more often"}, "affixes": [{"id": "twilight", "desc": "-5% accuracy (all)"}], "encounters": {"weights": {"slime_basic": 4, "wolf": 3, "sprite": 3}}, "lootBias": {"herbs": 0.5, "dust": 0.5}, "rewardsMult": {"xp": 1.07, "gold": 1.05}},
+    "3": {"env": {"name": "Shallow Brook", "hint": "Lightning stuns more reliably"}, "affixes": [{"id": "wet_ground", "desc": "+10% shock apply chance"}], "encounters": {"weights": {"wolf": 4, "sprite": 3}}, "lootBias": {"fish": 0.4, "herbs": 0.6}, "rewardsMult": {"xp": 1.14, "gold": 1.1}},
+    "4": {"env": {"name": "Old Grove", "hint": "Thicker bark: phys reduced slightly"}, "affixes": [{"id": "bark_skin", "desc": "Enemies gain +5 defense"}], "encounters": {"weights": {"wolf": 3, "sprite": 3, "skeleton": 2}}, "lootBias": {"wood": 0.5, "materials": 0.5}, "rewardsMult": {"xp": 1.21, "gold": 1.15}},
+    "5": {"env": {"name": "Heart of the Forest", "hint": "Boss: Elder Treant"}, "affixes": [{"id": "thick_roots", "desc": "-10% speed (players)"}], "encounters": {"boss": "treant_elder"}, "lootBias": {"wood": 0.6, "rare_seed": 0.4}, "rewardsMult": {"xp": 1.35, "gold": 1.3}},
+    "6": {"env": {"name": "Sun-Dappled Path", "hint": "Fire stronger, poison weaker"}, "affixes": [{"id": "dry_underbrush", "desc": "+10% fire damage"}], "encounters": {"weights": {"wolf": 4, "sprite": 4}}, "lootBias": {"dust": 0.6, "herbs": 0.4}, "rewardsMult": {"xp": 1.42, "gold": 1.35}},
+    "7": {"env": {"name": "Blooming Meadow", "hint": "Regen common on enemies"}, "affixes": [{"id": "pollen_cloud", "desc": "Enemies start with Regen (1)"}], "encounters": {"weights": {"sprite": 5, "wolf": 3}}, "lootBias": {"herbs": 0.7, "nectar": 0.3}, "rewardsMult": {"xp": 1.49, "gold": 1.4}},
+    "8": {"env": {"name": "Shadowed Hollow", "hint": "Spirits emerge"}, "affixes": [{"id": "thin_veil", "desc": "+10% magic damage (all)"}], "encounters": {"weights": {"ghost": 4, "sprite": 4}}, "lootBias": {"ectoplasm": 0.5, "dust": 0.5}, "rewardsMult": {"xp": 1.56, "gold": 1.45}},
+    "9": {"env": {"name": "Ancient Circle", "hint": "Crits more volatile"}, "affixes": [{"id": "wild_luck", "desc": "+5% crit chance (all)"}], "encounters": {"weights": {"ghost": 3, "skeleton": 3, "sprite": 2}}, "lootBias": {"runes": 0.4, "dust": 0.6}, "rewardsMult": {"xp": 1.63, "gold": 1.5}},
+    "10": {"env": {"name": "Elder Canopy", "hint": "Boss rematch with adds"}, "affixes": [{"id": "ancient_ward", "desc": "Boss gains +10% tenacity"}], "encounters": {"boss": "treant_elder", "adds": {"sprite": 2, "wolf": 1}}, "lootBias": {"rare_seed": 0.6, "dust": 0.4}, "rewardsMult": {"xp": 1.8, "gold": 1.65}}
+  }
+}

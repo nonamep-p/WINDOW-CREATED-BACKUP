@@ -1,0 +1,14 @@
+{
+  "slash": {"id": "slash", "name": "Slash", "description": "A basic sword attack", "type": "active", "sp_cost": 10, "effect": {"damage": 1.2}, "unlock_level": 1},
+  "guard_break": {"id": "guard_break", "name": "Guard Break", "description": "Strike that reduces shield.", "type": "active", "sp_cost": 15, "effect": {"damage": 1.0, "breakShield": 30}, "unlock_level": 4},
+  "fire_bolt": {"id": "fire_bolt", "name": "Fire Bolt", "description": "Hurl a bolt of fire that burns the target.", "type": "active", "sp_cost": 20, "effect": {"damage": 1.5, "apply": [{"status": "burn", "duration": 3}]}, "unlock_level": 3},
+  "smite": {"id": "smite", "name": "Smite", "description": "Holy strike that harms undead.", "type": "active", "sp_cost": 20, "effect": {"damage": 1.4}, "tags": ["holy"], "unlock_level": 5},
+  "ice_lance": {"id": "ice_lance", "name": "Ice Lance", "description": "Shard of ice that slows the target.", "type": "active", "sp_cost": 20, "effect": {"damage": 1.4, "apply": [{"status": "slow", "duration": 2}]}, "unlock_level": 4},
+  "shock": {"id": "shock", "name": "Shock", "description": "Lightning bolt that stuns the target.", "type": "active", "sp_cost": 25, "effect": {"damage": 1.6, "apply": [{"status": "shock", "duration": 1}]}, "unlock_level": 6},
+  "heal": {"id": "heal", "name": "Heal", "description": "Restore a moderate amount of HP.", "type": "active", "sp_cost": 20, "effect": {"healPct": 0.35}, "unlock_level": 8},
+  "shield": {"id": "shield", "name": "Shield", "description": "Raise a protective barrier.", "type": "active", "sp_cost": 15, "effect": {"shield": 40}, "unlock_level": 7},
+  "poison_dart": {"id": "poison_dart", "name": "Poison Dart", "description": "A venomous dart that poisons the target.", "type": "active", "sp_cost": 18, "effect": {"damage": 0.8, "apply": [{"status": "poison", "duration": 4}]}, "unlock_level": 5},
+  "blessing": {"id": "blessing", "name": "Blessing", "description": "Enhance your combat abilities.", "type": "active", "sp_cost": 25, "effect": {"apply": [{"status": "blessing", "duration": 5}]}, "unlock_level": 10},
+  "weaken": {"id": "weaken", "name": "Weaken", "description": "Reduce the enemy's attack power.", "type": "active", "sp_cost": 20, "effect": {"damage": 0.5, "apply": [{"status": "weakness", "duration": 3}]}, "unlock_level": 7},
+  "regeneration": {"id": "regeneration", "name": "Regeneration", "description": "Slowly heal over time.", "type": "active", "sp_cost": 30, "effect": {"apply": [{"status": "regeneration", "duration": 5}]}, "unlock_level": 12}
+}

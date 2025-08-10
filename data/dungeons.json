@@ -1,0 +1,46 @@
+{
+  "forest": {
+    "name": "Mystic Forest",
+    "description": "A dense forest filled with ancient magic and dangerous creatures",
+    "floors": 10,
+    "min_level": 1,
+    "monsters": ["goblin", "bandit", "skeleton"],
+    "boss": "troll",
+    "boss_floor": 10,
+    "xp_multiplier": 1.0,
+    "gold_multiplier": 1.0
+  },
+  "cave": {
+    "name": "Dark Cave",
+    "description": "A treacherous cave system with valuable minerals and deadly creatures",
+    "floors": 15,
+    "min_level": 3,
+    "monsters": ["skeleton", "orc", "bandit"],
+    "boss": "troll",
+    "boss_floor": 15,
+    "xp_multiplier": 1.2,
+    "gold_multiplier": 1.1
+  },
+  "castle": {
+    "name": "Abandoned Castle",
+    "description": "A grand castle filled with undead and ancient treasures",
+    "floors": 20,
+    "min_level": 5,
+    "monsters": ["skeleton", "orc", "troll"],
+    "boss": "dragon",
+    "boss_floor": 20,
+    "xp_multiplier": 1.5,
+    "gold_multiplier": 1.3
+  },
+  "abyss": {
+    "name": "The Abyss",
+    "description": "A bottomless pit where the strongest monsters dwell",
+    "floors": 25,
+    "min_level": 8,
+    "monsters": ["orc", "troll", "dragon"],
+    "boss": "dragon",
+    "boss_floor": 25,
+    "xp_multiplier": 2.0,
+    "gold_multiplier": 1.8
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "monsters": {
+    "bandit": {"name": "Road Bandit", "level": 5, "tags": ["humanoid"], "stats": {"hp": 130, "atk": 20, "defense": 10, "speed": 11, "accuracy": 65, "evasion": 35}, "rewards": {"xp": [18, 26], "gold": [12, 18], "drops": [{"itemId": "steel_sword", "chance": 0.05}, {"itemId": "leather", "chance": 0.5}]}, "ai": {"weights": {"attack": 0.8, "defend": 0.2}}},
+    "pyromancer": {"name": "Pyromancer", "level": 8, "tags": ["humanoid", "mage"], "stats": {"hp": 120, "sp": 60, "atk": 14, "defense": 8, "speed": 12, "intelligence": 16, "accuracy": 70, "evasion": 40}, "rewards": {"xp": [30, 40], "gold": [18, 24], "drops": [{"itemId": "ember_amulet", "chance": 0.08}]}, "ai": {"weights": {"skill:fire_bolt": 0.7, "attack": 0.3}}},
+    "ice_elemental": {"name": "Ice Elemental", "level": 9, "tags": ["elemental"], "stats": {"hp": 200, "sp": 40, "atk": 18, "defense": 16, "speed": 9, "intelligence": 12, "accuracy": 70, "evasion": 30}, "resistances": {"ice": 0.5, "fire": -0.3}, "rewards": {"xp": [36, 48], "gold": [20, 28], "drops": [{"itemId": "crystal_dust", "chance": 0.4}]}, "ai": {"weights": {"skill:ice_lance": 0.5, "attack": 0.5}}},
+    "storm_serpent": {"name": "Storm Serpent", "level": 12, "tags": ["beast", "boss"], "stats": {"hp": 480, "sp": 0, "atk": 44, "defense": 18, "speed": 14, "accuracy": 75, "evasion": 35}, "resistances": {"lightning": 0.5, "poison": 0.2}, "rewards": {"xp": [140, 180], "gold": [100, 160], "drops": [{"itemId": "stormcaller", "chance": 0.05}, {"itemId": "ring_precision", "chance": 0.2}]}, "ai": {"weights": {"attack": 0.7, "skill:shock": 0.3}}}
+  }
+}

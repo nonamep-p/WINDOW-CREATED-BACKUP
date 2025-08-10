@@ -1,0 +1,22 @@
+{
+  "items": {
+    "bronze_dagger": {"name": "Bronze Dagger", "type": "Weapon", "rarity": "Common", "price": 80, "effects": {"atk": 8, "agility": 2}},
+    "steel_sword": {"name": "Steel Sword", "type": "Weapon", "rarity": "Uncommon", "price": 260, "effects": {"atk": 18, "pen": 4}},
+    "hunter_bow": {"name": "Hunter Bow", "type": "Weapon", "rarity": "Uncommon", "price": 280, "effects": {"atk": 16, "accuracy": 16}},
+    "warhammer": {"name": "Warhammer", "type": "Weapon", "rarity": "Rare", "price": 680, "effects": {"atk": 30, "pen": 8}},
+    "frostbrand": {"name": "Frostbrand", "type": "Weapon", "rarity": "Epic", "price": 2200, "effects": {"atk": 34, "dmg_ice%": 0.15}, "onHit": {"procChance": 0.15, "apply": [{"status": "frost", "duration": 2}]}},
+    "stormcaller": {"name": "Stormcaller", "type": "Weapon", "rarity": "Legendary", "price": 0, "effects": {"atk": 40, "dmg_lightning%": 0.2, "crit_base": 0.05}},
+
+    "scout_armor": {"name": "Scout Armor", "type": "Armor", "rarity": "Uncommon", "price": 320, "effects": {"defense": 14, "agility": 3}},
+    "guardian_plate": {"name": "Guardian Plate", "type": "Armor", "rarity": "Rare", "price": 750, "effects": {"defense": 32, "hp%": 0.08}},
+    "archmage_robe": {"name": "Archmage Robe", "type": "Armor", "rarity": "Epic", "price": 1800, "effects": {"defense": 18, "sp%": 0.2, "intelligence": 8}},
+
+    "ring_precision": {"name": "Ring of Precision", "type": "Accessory", "rarity": "Uncommon", "price": 360, "effects": {"accuracy": 12, "crit_base": 0.02}},
+    "ring_vigor": {"name": "Ring of Vigor", "type": "Accessory", "rarity": "Rare", "price": 640, "effects": {"hp%": 0.08, "defense": 6}},
+    "amulet_focus": {"name": "Amulet of Focus", "type": "Accessory", "rarity": "Rare", "price": 720, "effects": {"intelligence": 10, "sp%": 0.1}},
+
+    "elixir_power": {"name": "Elixir of Power", "type": "Consumable", "rarity": "Rare", "price": 240, "use": {"buff": {"attack": 8, "duration": 3}}},
+    "elixir_barrier": {"name": "Elixir of Barrier", "type": "Consumable", "rarity": "Rare", "price": 240, "use": {"shield": 60}},
+    "elixir_haste": {"name": "Elixir of Haste", "type": "Consumable", "rarity": "Epic", "price": 480, "use": {"buff": {"speed": 6, "duration": 3}}}
+  }
+}

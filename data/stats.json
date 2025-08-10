@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "xpCurve": { "formula": "floor(50 * level^1.5)" },
+  "derived": {
+    "accuracy": "50 + agility*2 + classModAcc",
+    "evasion": "30 + agility + luck",
+    "crit_base": "classCritBase + luck*0.002",
+    "crit_dmg": "1.5 + luck*0.003",
+    "block%": "sum(block_from_items) + faction_block%",
+    "tenacity": "sum(tenacity_from_items) + faction_tenacity"
+  },
+  "combat": {
+    "hitClamp": [0.05, 0.95],
+    "grazeWindow": 0.1,
+    "grazeMult": 0.6,
+    "variance": [0.95, 1.05],
+    "physAlpha": 1.2,
+    "defendReduction": 0.4,
+    "guardCoeff": 0.6,
+    "flee": { "base": 0.4, "spdFactor": 0.02, "floorPenalty": 0.03, "bossMult": 0.5 }
+  },
+  "elements": ["physical", "magic", "fire", "ice", "poison", "shadow", "holy", "lightning"]
+}

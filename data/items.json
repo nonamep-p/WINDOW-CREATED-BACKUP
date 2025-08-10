@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "iron_ingot": {"name": "Iron Ingot", "type": "Material", "rarity": "Common", "price": 20},
+    "steel_ingot": {"name": "Steel Ingot", "type": "Material", "rarity": "Uncommon", "price": 45},
+    "mythril_ingot": {"name": "Mythril Ingot", "type": "Material", "rarity": "Epic", "price": 240},
+    "wood": {"name": "Timber", "type": "Material", "rarity": "Common", "price": 8},
+    "leather": {"name": "Cured Leather", "type": "Material", "rarity": "Common", "price": 12},
+    "cloth": {"name": "Woven Cloth", "type": "Material", "rarity": "Common", "price": 10},
+    "herbs": {"name": "Medicinal Herbs", "type": "Material", "rarity": "Common", "price": 10},
+    "water": {"name": "Pure Water", "type": "Material", "rarity": "Common", "price": 3},
+    "crystal_dust": {"name": "Crystal Dust", "type": "Material", "rarity": "Uncommon", "price": 30},
+    "gemstone": {"name": "Faceted Gemstone", "type": "Material", "rarity": "Rare", "price": 180},
+    "magic_essence": {"name": "Magic Essence", "type": "Material", "rarity": "Rare", "price": 200},
+    "dragon_scale": {"name": "Dragon Scale", "type": "Material", "rarity": "Legendary", "price": 1200},
+    "ancient_core": {"name": "Ancient Core", "type": "Material", "rarity": "Legendary", "price": 1500},
+    "enchanted_gem": {"name": "Enchanted Gem", "type": "Material", "rarity": "Epic", "price": 600},
+
+    "iron_sword": {"name": "Iron Sword", "type": "Weapon", "rarity": "Common", "price": 120, "effects": {"atk": 12, "pen": 3, "crit_base": 0.03}},
+    "oak_bow": {"name": "Oak Bow", "type": "Weapon", "rarity": "Common", "price": 140, "effects": {"atk": 10, "accuracy": 10, "crit_base": 0.02}},
+    "apprentice_wand": {"name": "Apprentice Wand", "type": "Weapon", "rarity": "Common", "price": 130, "effects": {"intelligence": 8, "crit_base": 0.02}},
+    "sunsteel_blade": {"name": "Sunsteel Blade", "type": "Weapon", "rarity": "Rare", "price": 1200, "effects": {"atk": 22, "pen": 6, "crit_base": 0.05, "dmg_fire%": 0.1}, "onHit": {"procChance": 0.2, "apply": [{"status": "burn", "stacks": 1, "duration": 3}]}, "tags": ["fire"]},
+
+    "chain_mail": {"name": "Chain Mail", "type": "Armor", "rarity": "Common", "price": 200, "effects": {"defense": 16, "hp%": 0.05}},
+    "leather_mail": {"name": "Leather Mail", "type": "Armor", "rarity": "Common", "price": 160, "effects": {"defense": 10, "agility": 2}},
+    "mystic_robe": {"name": "Mystic Robe", "type": "Armor", "rarity": "Uncommon", "price": 220, "effects": {"defense": 8, "sp%": 0.1, "intelligence": 4}},
+
+    "buckler": {"name": "Buckler", "type": "Shield", "rarity": "Uncommon", "price": 160, "effects": {"defense": 10, "block%": 0.1}},
+    "tower_shield": {"name": "Tower Shield", "type": "Shield", "rarity": "Rare", "price": 520, "effects": {"defense": 28, "block%": 0.2, "tenacity": 0.1}},
+
+    "agile_ring": {"name": "Ring of Agility", "type": "Accessory", "rarity": "Uncommon", "price": 300, "effects": {"agility": 5, "evasion": 10}},
+    "lucky_charm": {"name": "Lucky Charm", "type": "Accessory", "rarity": "Uncommon", "price": 320, "effects": {"luck": 6, "crit_base": 0.03}},
+    "ember_amulet": {"name": "Amulet of Embers", "type": "Accessory", "rarity": "Epic", "price": 1800, "effects": {"dmg_fire%": 0.15, "res_fire%": 0.2}},
+    "ward_talisman": {"name": "Ward Talisman", "type": "Accessory", "rarity": "Rare", "price": 850, "effects": {"res_magic%": 0.1, "tenacity": 0.1}},
+
+    "vital_potion_s": {"name": "Small Vital Potion", "type": "Consumable", "rarity": "Common", "price": 25, "use": {"healPct": 0.25}},
+    "vital_potion_m": {"name": "Medium Vital Potion", "type": "Consumable", "rarity": "Uncommon", "price": 60, "use": {"healPct": 0.45}},
+    "vital_potion_l": {"name": "Large Vital Potion", "type": "Consumable", "rarity": "Rare", "price": 140, "use": {"healPct": 0.75}},
+    "mana_potion_s": {"name": "Small Mana Potion", "type": "Consumable", "rarity": "Common", "price": 25, "use": {"sp": 30}},
+    "antidote": {"name": "Antidote", "type": "Consumable", "rarity": "Common", "price": 30, "use": {"cleanse": ["poison", "bleed"]}},
+    "shock_bomb": {"name": "Shock Bomb", "type": "Consumable", "rarity": "Uncommon", "price": 80, "use": {"damage": {"power": 110, "element": "lightning", "targets": "enemy"}, "apply": [{"status": "shock", "duration": 2}]}},
+    "smoke_bomb": {"name": "Smoke Bomb", "type": "Consumable", "rarity": "Uncommon", "price": 90, "use": {"escape": true}},
+
+    "abyss_artifact": {"name": "Eye of the Abyss", "type": "Artifact", "rarity": "Legendary", "price": 0, "effects": {"dmg_shadow%": 0.2, "crit_dmg": 0.3}, "passive": {"id": "abyssal_pulse", "desc": "Every 3rd hit unleashes shadow nova (small AoE)."}}
+  }
+}

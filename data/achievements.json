@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "achievements": {
+    "first_blood": {"name": "First Blood", "desc": "Win your first battle.", "category": "Combat", "reward": {"xp": 25, "gold": 50}},
+    "untouchable": {"name": "Untouchable", "desc": "Win a battle without taking damage.", "category": "Combat", "reward": {"xp": 50, "gold": 100}},
+    "swift_justice": {"name": "Swift Justice", "desc": "Win in 3 turns or fewer.", "category": "Combat", "reward": {"xp": 60, "gold": 80}},
+    "treasure_hunter": {"name": "Treasure Hunter", "desc": "Find 5 hidden caches.", "category": "Dungeon", "reward": {"xp": 80, "gold": 120}},
+    "boss_slayer": {"name": "Boss Slayer", "desc": "Defeat any dungeon boss.", "category": "Dungeon", "reward": {"xp": 120, "gold": 200, "items": [{"id": "ember_amulet", "qty": 1}]}}
+  }
+}
